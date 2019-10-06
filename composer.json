@@ -1,0 +1,31 @@
+{
+    "name": "sower/http",
+    "description": "http",
+    "license": "Apache-2.0",
+    "authors": [
+    ],
+    "require": {
+
+        "ext-fileinfo": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "sower\\worker\\": "src",
+			"Workerman\\": "lib\workerman",
+			"GatewayWorker\\": "lib\GatewayWorker"
+        }
+    },
+    "extra": {
+        "sower":{
+            "services":[
+                "sower\\worker\\Service"
+            ],
+            "config":{
+                "worker": "src/config/worker.php",
+                "worker_server": "src/config/server.php",
+                "gateway_worker": "src/config/gateway.php"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
