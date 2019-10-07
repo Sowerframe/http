@@ -11,8 +11,8 @@
     "autoload": {
         "psr-4": {
             "sower\\worker\\": "src",
-			"Workerman\\": "lib\workerman",
-			"GatewayWorker\\": "lib\GatewayWorker"
+			"Workerman\\": "workerman",
+			"GatewayWorker\\": "GatewayWorker"
         }
     },
     "extra": {
